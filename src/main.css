@@ -1,0 +1,46 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 20px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+@media (min-width: 1025px) {
+  :root {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1281px) {
+  :root {
+    font-size: 32px;
+  }
+}
+
+a, a:visited {
+  color: white;
+}
+
+*:focus {
+  outline: 0.1rem solid yellow;
+  outline-offset: 0.1rem;
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
+a:hover,
+button:hover {
+  filter: brightness(150%);
+}

@@ -1,0 +1,12 @@
+.GalleryRow {
+  margin-bottom: 2rem;
+}
+
+.GalleryItems {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-right: 3rem;
+}

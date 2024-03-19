@@ -1,0 +1,14 @@
+.MainMenu {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-basis: 10rem;
+  padding: 4rem 1rem 1rem 1rem;
+  background-color: brown;
+  height: 100%;
+  overflow: hidden;
+}
+
+.MainMenu a {
+  margin-bottom: 1rem;
+}
