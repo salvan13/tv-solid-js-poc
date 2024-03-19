@@ -79,6 +79,6 @@ const query = `query PanelXPage($id: String!) {
 
 export const loadPanelXPage = async (pageId: string) => {
   const data = await graphRequest<PanelXPage>(query, { id: pageId });
-  data.page.pagePanels.panels = data.page.pagePanels.panels.filter(panel => panel.__typename === "PosterListPanel");
+  data.page.pagePanels.panels = data.page.pagePanels.panels.filter(panel => panel.__typename === "PosterListPanel" && panel.posters.items.length > 0);
   return data;
 };
